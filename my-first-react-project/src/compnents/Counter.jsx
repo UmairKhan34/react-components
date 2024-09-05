@@ -10,7 +10,10 @@ const Counter = (props) => {
     <button onClick={clickHandler}>Increment</button>
         <button onClick={() => {
             setCount(count-1)
-    }}>Decrement</button>
+        }}>Decrement</button>
+        <button onClick={() => {
+            props.xyz()
+        }}>Delete Item</button>
     </>)
 }
 export default Counter;
